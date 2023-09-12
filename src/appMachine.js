@@ -1,8 +1,4 @@
 import { createMachine, assign, spawn } from 'xstate';
-import { cubeLogic } from './models/Cube.jsx'
-
-const cubeMachine1 = createMachine( cubeLogic )
-const cubeMachine2 = createMachine( cubeLogic )
 
 export const appMachine = createMachine({
   "id": "appMachine",
@@ -16,14 +12,7 @@ export const appMachine = createMachine({
   "initial": "home",
   "states": {
     "home": {
-      entry: [
-        assign({
-          shapeRef1: () => spawn(cubeMachine1),
-        }),
-        assign({
-          shapeRef2: () => spawn(cubeMachine2),
-        }),
-      ],
+      
       "on": {
         "menu.loading": {
           "target": "loading"

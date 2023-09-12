@@ -16,12 +16,10 @@ function App() {
   
   return (
     <AppContext.Provider>
-      <Canvas shadows camera={{ position: [6, 6, 6], fov: 30 }}>
+      <Canvas shadows camera={{ position: [8, 8, 8], fov: 30 }}>
         <color attach="background" args={["#ececec"]} />
         <Experience />
       </Canvas>
-      <Menu />
-      <HeadsUp />
     </AppContext.Provider>
   );
 }

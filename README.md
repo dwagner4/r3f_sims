@@ -5,6 +5,8 @@ Start with codespace React template.
 -  Add xstate, npm i --save xstate @xstate/react
 -  add some extras, npm i --save leva universal-cookie
 
+npx gltfjsx public public/models/AnimatedWoman.glb -o src/components/AnimatedWoman.jsx -r public
+
 
 # GitHub Codespaces ♥️ React
 
